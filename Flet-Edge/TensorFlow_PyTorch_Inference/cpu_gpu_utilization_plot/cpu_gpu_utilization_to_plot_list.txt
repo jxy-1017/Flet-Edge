@@ -1,1 +1,0 @@
-[[['shufflenet05_cuda_16_16-mobilenetv2_cuda_16_16'], ['shufflenet05_cuda_16_16', True, False], ['mobilenetv2_cuda_16_16', False, False]], [['shufflenet05_cuda_32_16-mobilenetv2_cuda_32_16'], ['shufflenet05_cuda_32_16', False, True], ['mobilenetv2_cuda_32_16', False, False]]]
