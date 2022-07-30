@@ -1,3 +1,15 @@
+"""
+Add a program to the root directory of different hosts as a springboard. The function of this program is to obtain the
+current host name and start change under the host folder change_dt_indir.py program.
+
+Initially, it is sent to the target host along with the host name folder, mainly using host_name.ini file. Then store
+it in the /root/ folder of the target host and wait for it to be dt_control_of_indir.py program starts.
+
+After the program starts, get the host in the current folder host_name.ini's host_name, and then start the
+corresponding host folder with medium change_dt_indir.py program.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import linecache
 import subprocess
 

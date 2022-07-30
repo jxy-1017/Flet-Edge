@@ -1,3 +1,18 @@
+"""
+Develop an automatic rendering module of distributed training results, which can refer to cpu_gpu_utilization the
+drawing program.
+
+Currently planned functions:
+1. You can draw multiple pictures at once, and you can choose which indicators to draw in each picture,
+such as nano's speedup line chart, PI's speedup line chart, acc_up、val_acc_up.
+
+2. At the same time, the data of different models running under the same conditions should be saved in different
+sheets of the same XLS. Here, it is also supported to draw the images of different models with different colors.
+
+3. The style and color of lines in the image (different types of hardware and different models need to be distinguished).
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import xlrd
 from matplotlib import pyplot as plt

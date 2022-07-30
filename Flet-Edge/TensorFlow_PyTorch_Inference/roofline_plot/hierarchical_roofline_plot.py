@@ -1,3 +1,14 @@
+"""
+Develop a single hierarchical roofline image to automate your own script.
+
+The data is saved in ini temporarily for easy reading.
+
+The current code only supports data point rendering of the model running in the same deep learning framework.
+
+Currently, only the drawing of coordinate points of a single framework is supported.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import sys
 import matplotlib.pyplot as plt

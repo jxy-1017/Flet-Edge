@@ -1,3 +1,9 @@
+"""
+The function of this method is to obtain the list of sections to be drawn, take out the contents of different sections
+one by one, and draw the line graph.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import linecache
 import sys
 from matplotlib import pyplot as plt

@@ -1,3 +1,9 @@
+"""
+Operation mode, for example:
+python3 jtop_logger_gpu_cpu.py shufflenet05
+
+note: The function of each method can be known by referring to its method name.
+"""
 from jtop import jtop, JtopException
 import argparse
 import sys

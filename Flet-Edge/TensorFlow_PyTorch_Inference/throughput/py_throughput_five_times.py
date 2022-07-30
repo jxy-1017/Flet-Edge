@@ -1,3 +1,12 @@
+"""
+The function of this code is to control the execution of the throughput collection code for five times, add and average
+the values collected each time, and then store them in the file.
+
+Between the control code and the actual execution code, use py_pre_data_throughput_%s_%s.txt, and the average result is
+output to result_throughput_%s_%s.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import sys
 import subprocess
 import time

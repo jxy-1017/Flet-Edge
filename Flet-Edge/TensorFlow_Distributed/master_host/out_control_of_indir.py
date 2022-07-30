@@ -1,3 +1,29 @@
+"""
+Connect master FTE_sub_out_control_dt and outer control program out_control_of_indir。 At the same time, modify
+the outer control program out_control_of_indir, so that it will be per_section_name folder is sent to the
+folder named by the host name in the ~ / directory of the host. Then modify its path to start the internal control
+program, that is ~/nanoX/change_dt_indir.py
+
+This procedure is an outer control procedure, which has three functions:
+
+(1) The outer control program needs to read the list of all sections that need to be run from the main program and
+generated in the sub configuration file, and then carry out a for loop. Each time, take out the name of a section and
+store it in a specific TXT file. The following "<2>, <3>" are inside the for loop:
+(2) After storing the file, read the information of the participating host of the section, and then call ansible to
+transfer the file to the corresponding folder of the participating host for control_dt_indir file read. The hosts in the
+dt host list in each section need to be sent separately per_section folder, because it needs to be sent to the specified
+~/nanoX folder, It starts change in the corresponding ~/nanoX folder change_dt_indir program, so (3) directly send and
+execute change to the host participating in this test in the for loop of the experimental section of (2)
+change_dt_indir Execute within the loop of indir. That is, the outer for loop is used to control the number of
+experiments performed, and the inner for loop is used to send per_section_name to the host participating in the
+experiment and start ~/nanoX/change_dt_indir program.
+(3) After the section file is transferred, use ansible to start the change of the training host change_dt_indir program.
+
+The outer control program is named out_control_of_indir, the program runs on a host running fleet edge, and the same
+directory folder should contain FTE_training_section_name/FTE_training_section_name_all_section.ini。
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import os
 import sys

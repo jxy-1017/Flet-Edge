@@ -1,3 +1,12 @@
+"""
+The function of this code is to control inference_time The time acquisition code is executed five times, and the values
+collected each time are added and averaged, and then stored in the file.
+
+Between the control code and the actual execution code, use py_pre_date_inference_time_%s_%s.txt, and the average result
+is output to result_inference_time_%s_%s.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import sys
 import subprocess
 import time

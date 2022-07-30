@@ -1,3 +1,25 @@
+"""
+Progressive host number distributed training master program:
+
+<1> Read the main configuration file, generate a list of full combination sub configuration files and record sub
+configuration file sections;
+
+<2> Generate folders of all hosts in the main configuration file and store them in sub configuration file, device
+configuration file and control_dt_indir and change_dt_config two template programs and host identification files.
+
+<3> Use ansible to transfer the folder to the corresponding host;
+
+<4> Popen starts the outer control program, and at the same time, it passes in the list of recording sub configuration
+file sections.
+
+The program runs on a host running Flet-Edge, and the main configuration file FTE should be contained in the same
+directory FTE_dt.ini, device configuration file FTE_device_config.ini.
+
+The FTE of the main configuration file needs to be set at the beginning of the FTE_device_config.ini path, which
+section in the main configuration file is the current experiment to take, that is, FTE_training_section_name。
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import itertools
 import os

@@ -1,3 +1,13 @@
+"""
+The index of data collection is --print-summary-per-gpu, without data cleaning, you can directly add and output
+calculation steps.
+
+Intermediate calculated value stored in %s_sum_time.log, the results are stored in tmp_pre_name_gpu_time_done.log.
+
+The final exact flops results are stored in %s_result_flops.txt, gflops results are stored in %s_result_gflops.txt.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import sys
 import subprocess
 import time

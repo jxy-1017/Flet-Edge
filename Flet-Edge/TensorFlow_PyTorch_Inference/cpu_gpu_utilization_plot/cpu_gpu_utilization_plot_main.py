@@ -1,3 +1,14 @@
+"""
+Functions of this program:
+1. Generate XLS files of different sections and copy them to the current folder.
+
+2. Generate the sub configuration file to be drawn, which contains the path of XLS file of utilization rate of different
+programs.
+
+3. To cpu_gpu_utilization_plot.py program passes in the list of combinations to be drawn.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import subprocess
 import sys

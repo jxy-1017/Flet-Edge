@@ -1,3 +1,19 @@
+"""
+be careful:
+
+The first parameter of the program is "model_name" here, and the actual running program is
+py_flops_select_all_model_infer.py model_name device_name input_size
+
+The second parameter is to enter the reasoning program to select the actual running model, and the second and third
+parameters are the transmitted super parameters.
+
+The intermediate file and result file of the collected data are named as:
+mid_log_pre_name = mark + "flops_l1_l2"
+result_pre_name = mark + "flops_l1_l2_result"
+among them: mark = model_name + "_" + device_name + "_" + input_size
+
+note: The function of each method can be known by referring to its method name.
+"""
 import sys
 import subprocess
 import time

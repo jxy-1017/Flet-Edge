@@ -1,3 +1,20 @@
+"""
+Control cpu/gpu、inference100_time、throughput program execution logic script.
+
+Logic: control with if else statement.
+
+Optimization 2: read the parameters by reading the INI file to transfer the parameters that need to be executed by this
+control to the actual running program.
+
+As for the upper program of the control program during reasoning, it is necessary to arrange and combine the different
+conditions selected by the user to generate different configuration files. Each time, a flag is passed to the reasoning
+file to control which sub configuration file the current control file reads to complete data collection.
+
+“FTE_generate_sub_config_run_inference_control_popen_06_04.py”, this code is called in the Popen of control when it
+starts inference.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import os
 import sys
 import subprocess

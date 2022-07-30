@@ -1,3 +1,8 @@
+"""
+The automatic drawing of histogram is relatively simple, mainly including data transmission, legend and image naming.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import sys
 import matplotlib.pyplot as plt

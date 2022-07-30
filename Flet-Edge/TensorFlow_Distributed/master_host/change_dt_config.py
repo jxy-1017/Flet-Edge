@@ -1,3 +1,13 @@
+"""
+The inner control file passes three parameters to the program: String form of worker_list, task_index, and training
+parameter list in string form config_list_indir_to_change_str。
+
+Example: worker_list_str: 192.168.1.101_192.168.1.102_192.168.1.103;
+task_index: 2 (String)
+config_list_indir_to_change_str: nano3_128_shufflenet05_imagenet_32_Adam_1e-05_20_391_79_cifar10;
+
+note: The function of each method can be known by referring to its method name.
+"""
 import os
 import tensorflow as tf
 import json

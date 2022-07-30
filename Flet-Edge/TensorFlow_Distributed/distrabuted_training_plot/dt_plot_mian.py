@@ -1,3 +1,11 @@
+"""
+To draw the main program, you need to read the configuration file, summarize the data in excel of the results of
+different experiments into one excel, and generate the data table of the gradual number of hosts according to the
+different number of hosts participating in the training of these experiments, and then calculate the acceleration ratio.
+The excel is named ET_dt_experiment01_FET_dt_experiment02_FET_dt_experiment03.xls.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import os
 import subprocess

@@ -1,3 +1,12 @@
+"""
+The function of this code is to control the PMU acquisition code to execute five times, add the collected values each
+time, average them, and then store them in the file.
+
+Between the control code and the actual execution code, use py_pre_data_pmu_%s_%s.txt, and the average result is output
+to result_pmu_%s_%s.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import sys
 import subprocess
 import time

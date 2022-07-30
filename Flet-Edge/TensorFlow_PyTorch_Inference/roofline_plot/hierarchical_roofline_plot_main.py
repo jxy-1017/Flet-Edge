@@ -1,3 +1,27 @@
+"""
+hierarchical_roofline main program, functions to be completed:
+
+1. Generate the configuration file to be read;
+
+2. To hierarchical_roofline_plot.py program passes in the list of combinations to be plotted plot_section_list。
+
+Preparation process:
+1. Refer to hierarchical_roofline file generation method of roofline is hierarchical_roofline value containing sub
+configuration file of rootline is written:
+(1) Hardware value section, for example:
+[gflops_bandwidth_nano]
+gflops = 387.93
+l1 = 57.1
+l2 = 38.95
+dram = 25.6
+(2) Values of gflops, L1, L2, and flops, for example:
+gflops = 13.0827
+l1 = 961836
+l2 = 385724
+flops = 31442347
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import os
 import subprocess

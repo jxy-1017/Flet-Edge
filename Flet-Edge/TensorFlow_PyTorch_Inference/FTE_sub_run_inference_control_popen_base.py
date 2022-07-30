@@ -1,3 +1,32 @@
+"""
+Combine the function of reading FTE of ini_read_FTE_combine_development_01.py, the classification and full combination
+function of FTE of ini_read_FTE_classify_combine_02.py, and the self configuration file generation function of
+ini_read_FTE_combine_generate_sub_config_02.py to generate a new code (the code in this document.)
+
+“classify_combine_FTE_and_generate_sub_config_03.py”, its function is to read FTE, classify and combine according
+to "is_throughput", and then generate all sub configurations into different sections in the same ini file.
+
+An ini file is generated for each section in the FTE, and the file name contains the name of the section in the FTE.
+
+Add the indicator acquisition flag bit to the sub indicator.
+
+Use a list to store the name of each section written to the sub configuration file. The name of the list includes the
+section name of the currently read FTE, named "%s_list_for_control" % FET_section_name", which records the full combined
+section in the section FTE.
+
+By reading the received FTE_ sub_ section_ List, use the for loop to read the value of each index of each section in the
+sub configuration file in order to control the operation of the control program when a Popen execution reasoning is executed.
+
+According to the length of the FTE_sub_section_list, use the for loop to start the corresponding number of popens,
+and each single_sub_section_list will be read as a parameter, input into the inference time control file.
+
+At the same time, write the parsing method of single_sub_section_list in the control file during inference to obtain
+parameter collection data.
+
+Put the control program popen_inference_sequential_control_04.py embedded in the program, sort out the notes of the program.
+
+note: The function of each method can be known by referring to its method name.
+"""
 import configparser
 import itertools
 import os
