@@ -60,12 +60,7 @@ A Full Life-cycle Evaluation Tool for deep learning framework on the Edge
       <td>Runtime Hierarchical Roofline(Ⅱ)</td>
    </tr>
    <tr>
-      <td>*Ⅰ:Metric concerned in training. *Ⅱ:Metric concerned inInference.</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
+      <td colspan="3">*Ⅰ:Metric concerned in training. *Ⅱ:Metric concerned inInference.</td>
    </tr>
 </table>
 
